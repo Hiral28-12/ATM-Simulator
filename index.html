@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Simulator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-sm-10">
+                <div class="atm-container text-center p-4 shadow rounded">
+                    <h2 class="mb-4">ATM Simulator</h2>
+                    <div class="form-group ">
+                        <label for="pin">Enter PIN:</label>
+                        <input type="password" class="form-control" id="pin" maxlength="4" placeholder="">
+                    </div>
+                    <button class="btn btn-primary " id="submitBtn">Submit</button>
+
+                    <div id="actions" style="display: none;" class="mt-4">
+                        <button class="btn btn-outline-dark mb-2" id="checkBalanceBtn">Check Balance</button><br>
+                        <button class="btn btn-outline-dark mb-2" id="depositBtn">Deposit</button><br>
+                        <button class="btn btn-outline-dark mb-2" id="withdrawBtn">Withdraw</button><br>
+                        <button class="btn btn-outline-danger mb-2" id="logoutBtn">Logout</button><br>
+                        <p id="balanceDisplay" class="mt-3" style="display:none;">Your balance is $</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
